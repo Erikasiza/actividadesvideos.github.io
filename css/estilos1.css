@@ -1,0 +1,80 @@
+/* selector universal borra todos los margenes que agrega el navegador*/
+
+*	{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	background: #C70039 ;
+	font-size: 15px;
+	font-family: 'Krona One', sans-serif;
+}
+
+/*20 PX ARRIBA Y ABAJO Y AUTO PARA CENTRAR*/
+header, .main, footer{
+	width: 100%;
+	max-width: 1000%;
+	margin: 25px AUTO;
+}
+
+/* OCULTAR EL CONTENIDO QUE SOBREPASA EL CONTENEDOR -LIMPIA LOS FLOAT LEFT*/
+header nav{
+	background: #B4ACAB;
+	overflow: hidden;
+}
+
+/*QUITAR PUNTOS EN LISTA*/
+header nav ul{
+	list-style: none;
+}
+
+/*SE APILAN HACIA LA IZQUIERDA Y TODOS LOS ELEMENTOS SE AFECTAN*/
+header nav ul li{
+	float: left;
+}
+
+/*DISPLAY BLOCK PODEMOS PERMITIR EL PADING HACIA ARRIBA Y ABAJO SINO SOLO FUNCIONA HACIA LOS LADOS*/
+header nav ul li a{
+	padding: 12px 20px;
+	display: block;
+	color: #900C3F;
+	text-decoration: none;
+}
+
+/*CAMBIAR EL FONDO CUANDO PASE EL MOUSE*/
+header nav ul li a:hover {
+	background: #D7BDE2;
+}
+
+.main .articulos {
+	width: 68%;
+	margin-right: 2%;
+	float: left;
+}
+
+.main .articulos article {
+	padding: 25px;
+	background: #FFF;
+	margin-bottom: 25px;
+}
+
+/* border-box, el ancho y el ato se calcula teniendo en cuenta el contenido y también el borde y el padding. 
+Es decir, el border y el paddig están incluidos en el ancho y alto*/
+aside{
+	width: 30%;
+	background: #FFF;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+/*CLEAR_ BOTH LIMPIAR EL FLOAT:LEFT;*/
+footer{
+	background: #D7BDE2
+	color: #fff;
+	clear: both;
+	padding: 10px 0px;
+	text-align: center;
+}
+
